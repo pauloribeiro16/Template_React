@@ -1,4 +1,4 @@
-# AGENTS.md — react-template
+# AGENTS.md — Template_React
 
 Hub do repositório. Começa aqui e desce pela hierarquia conforme a pasta em
 que trabalhas — o ficheiro `AGENTS.md` mais próximo do que estás a editar tem
@@ -25,12 +25,10 @@ tem de estar ao lado do pacote que o lê.
 
 ## Git
 
-- **Remote previsto:** GitHub privado
-  `https://github.com/pauloribeiro16/react-template.git` — por **HTTPS**, porque
-  o acesso por SSH está bloqueado neste ambiente. O repositório ainda não foi
-  criado no GitHub; quando for, liga-se com
-  `git remote add origin https://github.com/pauloribeiro16/react-template.git`.
-  A autenticação é feita pelo Git Credential Manager, sem segredos no remote.
+- **Remote:** GitHub privado `origin` →
+  `https://github.com/pauloribeiro16/Template_React.git`, por **HTTPS** — o
+  acesso por SSH está bloqueado neste ambiente. A autenticação é feita pelo Git
+  Credential Manager; não há credenciais no URL do remote.
 - Branch `main`, mais `feat/<área>` para trabalho em curso.
 - **Conventional Commits** em linha única, minúsculos: `feat:`, `fix:`,
   `chore:`, `docs:`, `refactor:` (ex.: `feat(auth): adicionar login com token`).

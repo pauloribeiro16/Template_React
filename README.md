@@ -1,4 +1,4 @@
-# react-template
+# Template_React
 
 Template de projeto full-stack: **React 19 + TypeScript** no frontend,
 **Express + Prisma + Postgres** no backend, num só repositório pnpm workspace.
