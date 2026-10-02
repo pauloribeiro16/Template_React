@@ -1,0 +1,19 @@
+# Normaliza as finhas de linha para LF em todos os sistemas, para o diff não
+# ficar poluído quando alguém trabalha em Windows e outra pessoa em Linux/mac.
+* text=auto eol=lf
+
+# Excepções: o que tem de ser CRLF para o Windows funcionar.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Binários — nunca tocado.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.zip binary

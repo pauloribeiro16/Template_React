@@ -1,0 +1,43 @@
+# Logs
+logs
+*.log
+pnpm-debug.log*
+
+# Segredos — só os .env.example são versionados
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build
+dist/
+build/
+*.tsbuildinfo
+
+# Testes e cobertura
+coverage/
+playwright-report/
+test-results/
+
+# Scratch local — o AGENTS.md manda escrever aqui, nunca versionar
+tmp/
+
+# Ficheiros de agente locais (as skills são versionadas, os planos não)
+.zcode/plans/
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

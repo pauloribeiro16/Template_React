@@ -1,0 +1,14 @@
+# Environment
+.env
+.env.*
+!.env.example
+
+# Build
+dist
+*.tsbuildinfo
+
+# Dependencies
+node_modules
+
+# Scratch local
+tmp/

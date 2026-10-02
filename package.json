@@ -1,0 +1,26 @@
+{
+  "name": "react-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "packageManager": "pnpm@12.6.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "dev:frontend": "pnpm --filter @react-template/frontend dev",
+    "dev:backend": "pnpm --filter @react-template/backend dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r --if-present test",
+    "format": "pnpm -r format",
+    "db:generate": "pnpm --filter @react-template/backend db:generate",
+    "db:migrate": "pnpm --filter @react-template/backend db:migrate",
+    "db:deploy": "pnpm --filter @react-template/backend db:deploy",
+    "db:seed": "pnpm --filter @react-template/backend db:seed",
+    "db:studio": "pnpm --filter @react-template/backend db:studio",
+    "db:validate": "pnpm --filter @react-template/backend db:validate"
+  }
+}

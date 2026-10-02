@@ -1,0 +1,40 @@
+# .zcodeignore — esconde ficheiros das listas do ZCode (pesquisa de ficheiros,
+# Command Center, candidatos de @). A sintaxe é a do .gitignore.
+#
+# NOTA: isto NÃO restringe o acesso do agente aos ficheiros — só os esconde das
+# listas. O que o agente não deve ler é o `.gitignore`, não este ficheiro.
+#
+# As skills (.zcode/skills/) são deliberadamente versionadas e NÃO estão
+# ignoradas: este repo é um template e tem de ser autocontido.
+
+# Logs
+*.log
+pnpm-debug.log*
+
+# Segredos
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# VCS
+.git/
+.github/
+
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build
+dist/
+build/
+*.tsbuildinfo
+
+# Testes
+coverage/
+playwright-report/
+test-results/
+
+# Scratch
+tmp/

@@ -1,0 +1,37 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Environment — só o .env.example é versionado
+.env
+.env.*
+!.env.example
+*.local
+
+# Build
+dist
+dist-ssr
+coverage
+
+# Testes de browser
+playwright-report
+test-results
+
+# Dependencies
+node_modules
+
+# Scratch local (o AGENTS.md manda escrever aqui, nunca versionar)
+tmp/
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

@@ -1,0 +1,22 @@
+// Esquema Prisma — fonte de verdade do modelo de dados.
+// Cada alteração aqui precisa de uma migration versionada
+// (`pnpm --filter backend db:migrate`) — nunca `db push` em produção.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("users")
+}
